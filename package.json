@@ -1,0 +1,39 @@
+{
+    "name": "spool-dao-token",
+    "version": "1.0.0",
+    "description": "Official Spool DAO Token (SPOOL) contract",
+    "homepage": "https://spool.fi",
+    "scripts": {
+        "compile": "hardhat compile",
+        "test": "hardhat test",
+        "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
+        "verify:mainnet": "hardhat etherscan-verify --network mainnet"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SpoolFi/spool-dao-token.git"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.0.3",
+        "@nomiclabs/hardhat-etherscan": "^2.1.8",
+        "@nomiclabs/hardhat-waffle": "^2.0.1",
+        "chai": "^4.2.0",
+        "dotenv": "^10.0.0",
+        "eslint": "^7.29.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "ethereum-waffle": "^3.0.2",
+        "ethers": "^5.5.2",
+        "hardhat": "^2.7.0",
+        "hardhat-deploy": "^0.9.14",
+        "hardhat-deploy-ethers": "^0.3.0-beta.11",
+        "prettier": "^2.3.2",
+        "prettier-plugin-solidity": "^1.0.0-beta.13",
+        "solhint": "^3.3.6",
+        "solhint-plugin-prettier": "^0.0.5"
+    }
+}
