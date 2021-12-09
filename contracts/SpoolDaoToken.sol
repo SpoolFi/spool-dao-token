@@ -11,19 +11,21 @@ import "./vendor/ERC20Pausable.sol";
  * Pausable token implementation that mints the full initial supply.
  */
 contract SpoolDaoToken is ERC20Pausable, Ownable {
+    uint256 constant private TOKEN_SUPPLY = 210_000_000 ether;
+
     /**
      * @dev Configures the token's name & symbol, sets the owner,
      * and mints the initial supply to the provided address.
      */
     constructor(
-        address owner,
-        address holder
+        address _owner,
+        address _holder
     )
         ERC20Pausable()
         ERC20("Spool DAO Token", "SPOOL")
     {
-        transferOwnership(owner);
-        _mint(holder, 210_000_000 * 1 ether);
+        transferOwnership(_owner);
+        _mint(_holder, TOKEN_SUPPLY);
     }
 
     /**
